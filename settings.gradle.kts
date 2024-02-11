@@ -12,4 +12,4 @@ pluginManagement {
 	}
 }
 
-rootProject.name = "template"
+rootProject.name = "office-vulp-bot"

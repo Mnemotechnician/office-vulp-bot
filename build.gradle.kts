@@ -10,7 +10,7 @@ plugins {
 	id("io.gitlab.arturbosch.detekt")
 }
 
-group = "template"
+group = "office-vulp-bot"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -44,7 +44,7 @@ dependencies {
 }
 
 application {
-	mainClass.set("template.AppKt")
+	mainClass.set("io.mnemotechnician.officevulp.AppKt")
 }
 
 tasks.withType<KotlinCompile> {
@@ -52,6 +52,7 @@ tasks.withType<KotlinCompile> {
 	kotlinOptions.jvmTarget = "17"
 
 	kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+	kotlinOptions.freeCompilerArgs += "-Xcontext-receivers"
 }
 
 tasks.jar {
