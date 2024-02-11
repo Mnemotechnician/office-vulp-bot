@@ -1,9 +1,7 @@
 package io.mnemotechnician.officevulp.extensions
 
-import ch.qos.logback.classic.util.StatusViaSLF4JLoggerFactory.addInfo
 import com.kotlindiscord.kord.extensions.annotations.UnexpectedBehaviour
 import com.kotlindiscord.kord.extensions.commands.Arguments
-import com.kotlindiscord.kord.extensions.commands.converters.impl.defaultingBoolean
 import com.kotlindiscord.kord.extensions.components.buttons.EphemeralInteractionButton
 import com.kotlindiscord.kord.extensions.components.components
 import com.kotlindiscord.kord.extensions.components.forms.ModalForm
@@ -12,10 +10,9 @@ import com.kotlindiscord.kord.extensions.utils.respond
 import dev.kord.common.Color
 import dev.kord.common.entity.*
 import dev.kord.core.entity.Message
-import dev.kord.core.entity.interaction.followup.PublicFollowupMessage
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.rest.builder.message.*
-import dev.kord.rest.builder.message.create.*
+import dev.kord.rest.builder.message.create.MessageCreateBuilder
 import io.github.oshai.kotlinlogging.KotlinLogging
 import kotlinx.coroutines.flow.*
 import kotlinx.datetime.Clock
