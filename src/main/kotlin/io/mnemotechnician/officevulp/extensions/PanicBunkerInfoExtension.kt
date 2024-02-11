@@ -43,7 +43,7 @@ class PanicBunkerInfoExtension : Extension() {
 	).map { it.toRegex(setOf(RegexOption.IGNORE_CASE, RegexOption.DOT_MATCHES_ALL)) }
 
 	// Assuming that by the time a member hits a week of time on the server, they will either surpass 24h, or learn what the panic bunker means one way or another
-	val serverTimeThreshold = 70000.days
+	val serverTimeThreshold = 7.days
 
 	@OptIn(UnexpectedBehaviour::class)
 	override suspend fun setup() {
